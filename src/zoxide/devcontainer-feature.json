@@ -7,9 +7,8 @@
   "installsAfter": [],
   "options": {
     "replaceCd": {
-      "type": "bool",
-      "default": "true",
-      "proposals": [],
+      "type": "boolean",
+      "default": true,
       "description": "Use zoxide when calling cd (see ZOXIDE_CMD_OVERRIDE)"
     },
     "username": {
