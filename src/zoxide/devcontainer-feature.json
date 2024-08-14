@@ -1,0 +1,25 @@
+{
+  "name": "zoxide",
+  "id": "zoxide",
+  "version": "0.1.0",
+  "description": "Install zoxide",
+  "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/zoxide",
+  "installsAfter": [],
+  "options": {
+    "replaceCd": {
+      "type": "boolean",
+      "default": "true",
+      "description": "Use zoxide when calling cd (see ZOXIDE_CMD_OVERRIDE)"
+    },
+    "username": {
+      "type": "string",
+      "default": "",
+      "proposals": [
+        "root",
+        "node",
+        "vscode"
+      ],
+      "description": "For which user to setup zoxide, by default uses 'remoteUser' or 'containerUser' from config"
+    }
+  }
+}
