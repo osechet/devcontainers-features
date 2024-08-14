@@ -7,7 +7,7 @@ Install [zoxide](https://github.com/ajeetdsouza/zoxide)
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/zoxide:0": {}
+    "ghcr.io/devcontainers-contrib/features/zoxide:1": {}
 }
 ```
 

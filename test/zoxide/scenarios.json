@@ -7,11 +7,12 @@
       }
     }
   },
-  "test_no_cd": {
+  "test_no_cd_no_enable": {
     "image": "mcr.microsoft.com/devcontainers/base:debian",
     "features": {
       "zoxide": {
-        "replaceCd": false
+        "replaceCd": false,
+        "enable": false
       }
     }
   }
