@@ -143,7 +143,9 @@ jobs:
 
           for i in ${comma_separated_features//,/ }
           do
-            shellcheck --severity=error -e SC2148 src/"$i"/*.sh
+            if [ -d src/"$i" ]; then
+              shellcheck --severity=error -e SC2148 src/"$i"/*.sh
+            fi
           done
 
   test-global:
