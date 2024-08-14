@@ -1,0 +1,18 @@
+{
+  "test": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "zoxide": {
+        "replaceCd": true
+      }
+    }
+  },
+  "test_no_cd": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "zoxide": {
+        "replaceCd": false
+      }
+    }
+  }
+}
