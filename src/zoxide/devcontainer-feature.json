@@ -1,15 +1,28 @@
 {
   "name": "zoxide",
   "id": "zoxide",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Install zoxide",
-  "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/zoxide",
+  "documentationURL": "http://github.com/osechet/devcontainers-features/features/tree/main/src/zoxide",
   "installsAfter": [],
   "options": {
+    "version": {
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": [
+        "latest"
+      ],
+      "type": "string"
+    },
     "replaceCd": {
       "type": "boolean",
       "default": true,
       "description": "Use zoxide when calling cd (see ZOXIDE_CMD_OVERRIDE)"
+    },
+    "enable": {
+      "type": "boolean",
+      "default": true,
+      "description": "Enable zoxide in the shell. Useful if you want to enable it with oh-my-zsh plugin"
     },
     "username": {
       "type": "string",

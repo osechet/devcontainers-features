@@ -7,7 +7,7 @@ Install (Oh-My-)ZSH plugins
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {}
+    "ghcr.io/devcontainers-contrib/features/zsh-plugins:1": {}
 }
 ```
 
@@ -18,9 +18,3 @@ Install (Oh-My-)ZSH plugins
 | plugins | Space separated list of ZSH plugin names that will be added to .zshrc | string | - |
 | omzPlugins | Space separated list of Oh-My-ZSH custom plugin Git URLs that will be cloned | string | - |
 | username | For which user to setup ZSH plugins, by default uses 'remoteUser' or 'containerUser' from config | string | - |
-
-
-
----
-
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers-contrib/features/blob/main/src/zsh-plugins/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

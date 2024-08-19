@@ -83,6 +83,9 @@ jobs:
             else
               echo 'features_to_test=${{ needs.find-features.outputs.all-features }}' >> $GITHUB_OUTPUT
             fi
+
+          else # event_name == 'schedule'
+            echo 'features_to_test=${{ needs.find-features.outputs.all-features }}' >> $GITHUB_OUTPUT
           fi
 
       - name: binning
@@ -103,13 +106,13 @@ jobs:
                   basket.append(item)
               return baskets
 
-          std_input = "".join(fileinput.input())
+          std_input = sys.argv[1]
           list_binned_values = cycle_baskets(json.loads(std_input), MAX_BIN_NUM)
           comma_binned_values = [",".join(values) for values in list_binned_values]
           sys.stdout.write(json.dumps(comma_binned_values))
           EOF
 
-          binned_features=$(echo '${{ steps.resolve_features.outputs.features_to_test }}' | python3 bin_cycle.py)
+          binned_features=$(python3 bin_cycle.py '${{ steps.resolve_features.outputs.features_to_test }}')
           echo $binned_features
           echo "binned_features=$binned_features" >> $GITHUB_OUTPUT
 

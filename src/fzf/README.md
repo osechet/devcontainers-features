@@ -16,5 +16,3 @@ fzf is a general-purpose command-line fuzzy finder.
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the version to install. | string | latest |
-
-
