@@ -7,7 +7,7 @@ The Bitwarden command-line interface (CLI) is a powerful, fully-featured tool fo
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-contrib/features/bitwarden-cli:1": {}
+  "ghcr.io/devcontainers-contrib/features/bitwarden-cli:1": {}
 }
 ```
 
@@ -16,5 +16,3 @@ The Bitwarden command-line interface (CLI) is a powerful, fully-featured tool fo
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
 | version | Select the version to install. | string | latest |
-
-
