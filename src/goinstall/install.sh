@@ -11,7 +11,7 @@ fi
 
 IFS=',' read -r -a packages <<< "$PACKAGES"
 
-for package in ${packages[@]}; do
+for package in "${packages[@]}"; do
   go install ${package}
 done
 
