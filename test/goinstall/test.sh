@@ -4,7 +4,7 @@ set -e
 
 source dev-container-features-test-lib
 
-# check dlv is installed
-check "version" dlv version
+# check cobra-cli is installed
+check "cobra-cli instaled" cobra-cli --help
 
 reportResults
