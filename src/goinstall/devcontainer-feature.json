@@ -1,0 +1,25 @@
+{
+  "name": "goinstall",
+  "id": "goinstall",
+  "version": "1.0.0",
+  "description": "Install go application with go install",
+  "documentationURL": "http://github.com/osechet/devcontainers-features/features/tree/main/src/goinstall",
+  "options": {
+    "version": {
+      "type": "string",
+      "default": "latest",
+      "description": "Select the version to install.",
+      "proposals": [
+        "latest"
+      ]
+    },
+    "package": {
+      "type": "string",
+      "default": "",
+      "description": "The go package to install"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/go"
+  ]
+}
