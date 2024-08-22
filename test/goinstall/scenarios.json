@@ -4,7 +4,16 @@
     "features": {
       "ghcr.io/devcontainers/features/go:1": {},
       "goinstall": {
-        "package": "github.com/go-delve/delve/cmd/dlv"
+        "packages": "github.com/spf13/cobra-cli@latest"
+      }
+    }
+  },
+  "test_multiple_packages": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "ghcr.io/devcontainers/features/go:1": {},
+      "goinstall": {
+        "packages": "github.com/spf13/cobra-cli@latest,go.uber.org/mock/mockgen@latest"
       }
     }
   },
@@ -13,8 +22,7 @@
     "features": {
       "ghcr.io/devcontainers/features/go:1": {},
       "goinstall": {
-        "package": "github.com/go-delve/delve/cmd/dlv",
-        "version": "v1.7.3"
+        "packages": "github.com/spf13/cobra-cli@v1.3.0"
       }
     }
   }
