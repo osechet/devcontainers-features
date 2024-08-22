@@ -1,0 +1,21 @@
+{
+  "test": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "ghcr.io/devcontainers/features/go:1": {},
+      "goinstall": {
+        "package": "github.com/go-delve/delve/cmd/dlv"
+      }
+    }
+  },
+  "test_specific_version": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "ghcr.io/devcontainers/features/go:1": {},
+      "goinstall": {
+        "package": "github.com/go-delve/delve/cmd/dlv",
+        "version": "v1.7.3"
+      }
+    }
+  }
+}
